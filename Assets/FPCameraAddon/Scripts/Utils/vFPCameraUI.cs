@@ -55,8 +55,8 @@ namespace Invector.vCharacterController.vActions
         }
         public void ArtDisplay(Art_Details art_Details)
         {
-            Header.text =  art_Details.Header;
-            Description.text = art_Details.Description;
+            Header.text = "Header : " + art_Details.Header;
+            Description.text = "Description : " + art_Details.Description;
             Cost.text = "Cost : " + art_Details.Cost;
             var tempUrl = art_Details.Link;
             buyButton.onClick.RemoveAllListeners();
